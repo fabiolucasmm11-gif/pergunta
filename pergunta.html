@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pergunta 😏</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+      overflow: hidden;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 20px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+    }
+
+    #sim {
+      background-color: green;
+      color: white;
+    }
+
+    #nao {
+      background-color: red;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Quer voltar com o froyd? 😏</h1>
+
+  <button id="sim" onclick="clicouSim()">Sim</button>
+  <button id="nao" onmouseover="fugir()">Não</button>
+
+  <script>
+    function fugir() {
+      let botao = document.getElementById("nao");
+
+      let largura = window.innerWidth - 100;
+      let altura = window.innerHeight - 100;
+
+      let x = Math.random() * largura;
+      let y = Math.random() * altura;
+
+      botao.style.left = x + "px";
+      botao.style.top = y + "px";
+    }
+
+    function clicouSim() {
+      // 🔗 COLOQUE AQUI O LINK DO VÍDEO
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }
+  </script>
+
+</body>
+</html>
